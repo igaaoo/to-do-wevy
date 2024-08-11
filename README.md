@@ -51,5 +51,18 @@ Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 yarn test # Ou npm run test
 ```
 
+## Considerações
+Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login:
+**Usuário:**
+Wevy123
+**Senha:**
+Senha123
+
+
 ## Preview
+**Tela de Login**
 ![image](https://github.com/user-attachments/assets/4e93d5f5-4eca-4b83-9f0a-4c8567fd2a4a)
+
+**Tela te Tarefas**
+![image](https://github.com/user-attachments/assets/291efc3b-dadb-46ec-bc77-c29303b36da9)
+
