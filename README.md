@@ -4,7 +4,9 @@
 
 ## Descrição
 
-Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pessoais de forma eficiente. O sistema inclui uma tela de login e funcionalidades de CRUD (Criar, Ler, Atualizar e Excluir) para tarefas.
+Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pessoais de forma eficiente. O sistema inclui uma tela de login e funcionalidades de CRUD (Criar, Ler, Atualizar e Excluir) para tarefas. 
+
+<br/>Vale reforçar que este projeto foi desenvolvido a partir de um template já anteriormente construído por mim, disponível em: [Next-Template](https://github.com/igaaoo/Next-Template)
 
 ## Funcionalidades
 
@@ -20,7 +22,7 @@ Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pes
 - **[SQLite](https://www.sqlite.org/)**: Banco de dados leve e fácil de configurar, utilizado para armazenar as tarefas.
 
 ## Acesso
-Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login: <br/>
+Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login: <br/><br/>
 **Usuário:** <br/>
 Wevy123 <br/>
 **Senha:** <br/>
