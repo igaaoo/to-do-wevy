@@ -28,7 +28,7 @@ Para rodar o projeto localmente, siga os seguintes passos:
 
 2. **Instale Dependências:**
    ```bash
-   yarn install ou npm install
+   yarn install # Ou npm install
 
 
 3. **Configure as variáveis de ambiente:**
@@ -39,11 +39,12 @@ Criar arquivo .env na raiz do projeto contendo:<br/>
 
 4. **Construa e Execute:**<br/>
     ```bash
-    yarn install ou npm install
+    yarn build # Ou npm run build
+    yarn start # Ou npm run start
 
 
 5. **Para testar o projeto:**<br/>
 Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
  ```bash
-yarn test ou npm test
+yarn test # Ou npm run test
