@@ -56,7 +56,7 @@ export function CreateTaskCard() {
   }
 
   return (
-    <Card className="col-span-2  max-h-[450px] min-w-[300px] ">
+    <Card className="col-span-2  max-h-[450px] min-w-[300px] shadow">
       <CardHeader className="text-start">
         <CardTitle className="text-xl">
           Criar Tarefa
@@ -90,7 +90,7 @@ export function CreateTaskCard() {
 
           <Button
             type="submit"
-            className="mt-4 w-full bg-pink-700"
+            className="mt-4 w-full bg-pink-700 text-white"
             disabled={loading}
           >
             {loading ? "Carregando..." : "Criar Tarefa"}

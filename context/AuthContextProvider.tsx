@@ -46,7 +46,7 @@ const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
     if (hasCookie(sessionName)) {
       login(getCookie(sessionName)!.toString());
     } else {
-      if (pathName != '/login') {
+      if (pathName != '/login' && pathName != '/register') {
         redirect('/login');
       }
     }

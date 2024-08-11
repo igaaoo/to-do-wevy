@@ -13,14 +13,15 @@ export default function IndexPage() {
   useEffect(() => {
     if (token)
       updateData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   return (
     <div className="flex w-full flex-col items-center justify-center  pt-2 md:mt-12 md:px-10 xl:px-32">
-      <section className="flex min-w-[70%] flex-col-reverse justify-start gap-4 md:grid md:grid-cols-5">
+      <section className="flex min-w-[70%] flex-col-reverse justify-start gap-4 md:grid md:grid-cols-6">
         <CreateTaskCard />
 
-        <div className="col-span-3">
+        <div className="col-span-4">
           <DataTable
             columns={columns}
             data={data}

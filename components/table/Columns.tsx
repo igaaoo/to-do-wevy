@@ -7,6 +7,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import axios from "axios";
 import { Tasks } from "@/types/tasks";
 import { getCookie } from "cookies-next";
+import { DataTableColumnHeader } from "./data-table-column-header";
 
 
 
@@ -65,7 +66,11 @@ export const columns: ColumnDef<Tasks>[] = [
 
   {
     accessorKey: "priority",
-    header: "Prioridade",
+    header: ({ column }) => (
+      <div >
+        <DataTableColumnHeader column={column} title="Prioridade" />
+      </div>
+    ),
     cell: ({ row }) => {
       const priority = row.getValue("priority");
 
@@ -92,6 +97,11 @@ export const columns: ColumnDef<Tasks>[] = [
         </div>
       );
     },
+    filterFn: (row, id, value) => {
+      return value.includes(row.getValue(id));
+    },
+    enableSorting: true,
+    sortDescFirst: true,
   },
   {
     id: "actions",

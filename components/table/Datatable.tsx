@@ -9,6 +9,11 @@ import {
   useReactTable,
   ColumnFiltersState,
   getFilteredRowModel,
+  VisibilityState,
+  SortingState,
+  getSortedRowModel,
+  getFacetedRowModel,
+  getFacetedUniqueValues,
 } from "@tanstack/react-table";
 
 import {
@@ -40,6 +45,12 @@ export function DataTable<TData, TValue>({
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
   );
+  const [columnVisibility, setColumnVisibility] =
+    React.useState<VisibilityState>({});
+  [];
+
+  const [sorting, setSorting] = React.useState<SortingState>([]);
+
 
   const [rowSelection, setRowSelection] = React.useState({});
 
@@ -47,27 +58,35 @@ export function DataTable<TData, TValue>({
   const table = useReactTable({
     data,
     columns,
-    getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    onColumnFiltersChange: setColumnFilters,
-    getFilteredRowModel: getFilteredRowModel(),
-    onRowSelectionChange: setRowSelection,
     state: {
-      columnFilters,
+      sorting,
+      columnVisibility,
       rowSelection,
-
+      columnFilters,
     },
+    enableRowSelection: true,
+    onRowSelectionChange: setRowSelection,
+    onSortingChange: setSorting,
+    onColumnFiltersChange: setColumnFilters,
+    onColumnVisibilityChange: setColumnVisibility,
+    getCoreRowModel: getCoreRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+    getFacetedRowModel: getFacetedRowModel(),
+    getFacetedUniqueValues: getFacetedUniqueValues(),
   });
 
   useEffect(() => {
     table.setPageSize(5);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 
 
 
   return (
-    <div className="w-full rounded-lg border px-6 py-4 ">
+    <div className="w-full rounded-lg border px-6 py-4 shadow">
       <div className="flex items-center justify-between overflow-x-auto">
         <div className="flex gap-2  py-4">
           <Input
