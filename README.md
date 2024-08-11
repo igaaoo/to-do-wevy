@@ -65,6 +65,6 @@ yarn test # Ou npm run test
 **Tela de Login**
 ![image](https://github.com/user-attachments/assets/4e93d5f5-4eca-4b83-9f0a-4c8567fd2a4a)
 
-**Tela te Tarefas**
+**Tela de Tarefas**
 ![image](https://github.com/user-attachments/assets/291efc3b-dadb-46ec-bc77-c29303b36da9)
 
