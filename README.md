@@ -40,12 +40,13 @@ Criar arquivo .env na raiz do projeto contendo:<br/>
  - NODE_ENV=production # Ou com valor "test" para realizar os testes com JEST
 
 <br/>
-4. **Construa e Execute:**
+4. **Construa e Execute:**<br/>
     ```bash
     yarn install ou npm install
 
+
 <br/>
-5. **Para testar o projeto:**
+5. **Para testar o projeto:**<br/>
 Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
  ```bash
