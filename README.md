@@ -42,11 +42,11 @@ Criar arquivo .env na raiz do projeto contendo:
 
 4. **Construa e Execute:**
     ```bash
-     yarn install ou npm install
+    yarn install ou npm install
 
 
 5. **Para testar o projeto:**
 Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
  ```bash
-   yarn test ou npm test
+yarn test ou npm test
