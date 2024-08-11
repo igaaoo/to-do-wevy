@@ -18,7 +18,7 @@ import {
 
 
 export function SiteHeader() {
-  const { token, logout, role } = useAuthContext();
+  const { token, logout } = useAuthContext();
 
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,9 +31,8 @@ export function SiteHeader() {
     return role === 'admin' || role === 'supervisor';
   };
 
-  // Renderiza os links apenas se for público ou se o usuário tiver permissão (administrador ou supervisor)
-  const renderLinks = (item: any, role: string, index: number) => {
-    if (item.security === 'public' || hasPermission(role)) {
+  const renderLinks = (item: any, index: number) => {
+    if (item.security === 'public') {
       return (
         <Link
           key={index}
@@ -83,31 +82,11 @@ export function SiteHeader() {
               (item: any, index) =>
                 item.href !== "/" &&
                 (item.href && item.links == null ?
-                  renderLinks(item, role, index)
+                  renderLinks(item, index)
                   :
-                  (
-                    hasPermission(role) &&
-                    <DropdownMenu key={index}>
-                      <DropdownMenuTrigger className={cn(
-                        `hover:bg-accentHeader flex items-center rounded border-b px-2 py-4 text-sm font-medium text-muted-foreground   md:border-0  lg:border-0 ${token == '' && 'hidden'}`,
-                      )}>Configurations</DropdownMenuTrigger>
-                      <DropdownMenuContent collisionPadding={15} className="flex flex-col">
+                  null
+                )
 
-                        {item.links?.map(
-                          (item: any, index: any) =>
-                            <DropdownMenuItem key={index}>
-                              <Link
-
-                                className={cn(
-                                  `flex w-full items-center whitespace-nowrap rounded border-b p-3 text-sm font-medium text-muted-foreground hover:bg-accent  md:border-0 lg:border-0${token == '' && 'hidden'}`,
-                                )} href={item.href}>
-                                {item.title}
-                              </Link>
-                            </DropdownMenuItem>
-                        )}
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-                  ))
             )}
 
             <div className="flex w-fit items-center justify-end gap-2 md:w-full lg:w-full">

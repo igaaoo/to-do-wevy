@@ -86,7 +86,7 @@ export function DataTable<TData, TValue>({
 
 
   return (
-    <div className="w-full rounded-lg border px-6 py-4 shadow">
+    <div className="w-full rounded-lg border px-6 py-4 shadow" aria-label="tasksTable">
       <div className="flex items-center justify-between overflow-x-auto">
         <div className="flex gap-2  py-4">
           <Input
@@ -139,10 +139,12 @@ export function DataTable<TData, TValue>({
                       row.getValue("isOpen") == false && "bg-gray-200 text-muted-foreground line-through"
                     )
                   }
+                  aria-label="taskRow"
                 >
                   {row.getVisibleCells().map((cell, index) => (
                     <TableCell key={cell.id}
                       className="m-0 p-4"
+
                     >
 
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}

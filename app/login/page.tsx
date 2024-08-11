@@ -105,13 +105,13 @@ export default function IndexPage() {
             <div className="grid w-full items-center gap-4">
               <div className="flex flex-col space-y-1.5">
 
-                <Input id="login" placeholder="Usuário" onChange={(e) => {
+                <Input id="login" placeholder="Usuário" aria-label="login" onChange={(e) => {
                   setUser(e.target.value);
                 }} />
               </div>
               <div className="flex flex-col space-y-1.5">
 
-                <Input id="password" placeholder="Senha" type="password" onChange={(e) => {
+                <Input id="password" placeholder="Senha" aria-label="password" type="password" onChange={(e) => {
                   setPassword(e.target.value);
                 }} />
 

@@ -56,7 +56,7 @@ export function CreateTaskCard() {
   }
 
   return (
-    <Card className="col-span-2  max-h-[450px] min-w-[300px] shadow">
+    <Card className="col-span-2  max-h-[450px] min-w-[300px] shadow" aria-label="createTaskCard">
       <CardHeader className="text-start">
         <CardTitle className="text-xl">
           Criar Tarefa

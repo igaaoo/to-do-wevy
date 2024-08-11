@@ -45,7 +45,10 @@ const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
   useEffect(() => {
     if (hasCookie(sessionName)) {
       login(getCookie(sessionName)!.toString());
-    } else {
+    }
+    else {
+      if (process.env.NODE_ENV == 'test') return;
+
       if (pathName != '/login' && pathName != '/register') {
         redirect('/login');
       }
