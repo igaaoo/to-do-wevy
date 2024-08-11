@@ -35,8 +35,8 @@ Para rodar o projeto localmente, siga os seguintes passos:
 
 <br/>
 3. **Configure as variáveis de ambiente:** <br/>
-Criar arquivo .env na raiz do projeto contendo:
- - DATABASE_URL="file:./database/todo.db" # Ou outro caminho para salvar o banco de dados SQLITE
+Criar arquivo .env na raiz do projeto contendo:<br/>
+ - DATABASE_URL="file:./database/todo.db" # Ou outro caminho para salvar o banco de dados SQLITE<br/>
  - NODE_ENV=production # Ou com valor "test" para realizar os testes com JEST
 
 <br/>
