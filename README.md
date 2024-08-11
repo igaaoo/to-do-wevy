@@ -48,3 +48,6 @@ Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
  ```bash
 yarn test # Ou npm run test
+
+## Preview
+![image](https://github.com/user-attachments/assets/4e93d5f5-4eca-4b83-9f0a-4c8567fd2a4a)
