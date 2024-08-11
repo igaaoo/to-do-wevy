@@ -25,11 +25,12 @@ Para rodar o projeto localmente, siga os seguintes passos:
    ```bash
    git clone [https://github.com/seu-usuario/to-do-list.git](https://github.com/igaaoo/to-do-wevy.git)
    cd to-do-wevy
-
+    ```
+   
 2. **Instale Dependências:**
    ```bash
    yarn install # Ou npm install
-
+    ```
 
 3. **Configure as variáveis de ambiente:**
 Criar arquivo .env na raiz do projeto contendo:<br/>
@@ -41,13 +42,14 @@ Criar arquivo .env na raiz do projeto contendo:<br/>
     ```bash
     yarn build # Ou npm run build
     yarn start # Ou npm run start
-
+    ```
 
 5. **Para testar o projeto:**<br/>
 Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
- ```bash
+```bash
 yarn test # Ou npm run test
+```
 
 ## Preview
 ![image](https://github.com/user-attachments/assets/4e93d5f5-4eca-4b83-9f0a-4c8567fd2a4a)
