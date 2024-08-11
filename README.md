@@ -1,5 +1,7 @@
 # To Do List
 
+![image](https://github.com/user-attachments/assets/291efc3b-dadb-46ec-bc77-c29303b36da9)
+
 ## Descrição
 
 Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pessoais de forma eficiente. O sistema inclui uma tela de login e funcionalidades de CRUD (Criar, Ler, Atualizar e Excluir) para tarefas.
@@ -16,6 +18,13 @@ Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pes
 - **[Jest](https://jestjs.io/)**: Framework de testes para realizar testes unitários e garantir a qualidade do código.
 - **[Prisma](https://www.prisma.io/)**: ORM para gerenciar a base de dados e interagir com o banco de dados de forma eficiente.
 - **[SQLite](https://www.sqlite.org/)**: Banco de dados leve e fácil de configurar, utilizado para armazenar as tarefas.
+
+## Acesso
+Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login: <br/>
+**Usuário:** <br/>
+Wevy123 <br/>
+**Senha:** <br/>
+Senha123 <br/>
 
 ## Instalação
 
@@ -49,13 +58,6 @@ Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 ```bash
 yarn test # Ou npm run test
 ```
-
-## Considerações
-Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login: <br/>
-**Usuário:** <br/>
-Wevy123 <br/>
-**Senha:** <br/>
-Senha123 <br/>
 
 ## Preview
 **Tela de Login**
