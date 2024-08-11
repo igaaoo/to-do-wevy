@@ -26,25 +26,25 @@ Para rodar o projeto localmente, siga os seguintes passos:
    ```bash
    git clone [https://github.com/seu-usuario/to-do-list.git](https://github.com/igaaoo/to-do-wevy.git)
    cd to-do-wevy
-
+<br/>
 
 2. **Instale Dependências:**
 
    ```bash
    yarn install ou npm install
 
-
-3. **Configure as variáveis de ambiente:**
+<br/>
+3. **Configure as variáveis de ambiente:** <br/>
 Criar arquivo .env na raiz do projeto contendo:
  - DATABASE_URL="file:./database/todo.db" # Ou outro caminho para salvar o banco de dados SQLITE
  - NODE_ENV=production # Ou com valor "test" para realizar os testes com JEST
 
-
+<br/>
 4. **Construa e Execute:**
     ```bash
     yarn install ou npm install
 
-
+<br/>
 5. **Para testar o projeto:**
 Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
