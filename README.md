@@ -1,24 +1,57 @@
-# Next-Template
-## Features:
-Dark Mode, Login with Cookies Session, Radix and Shadcn components, TailwindCSS, Typescript, Eslint, Prettier, and MORE!
+# To Do List
 
-## Previews:
-#### Login
-![image](https://github.com/igaaoo/Next-Template/assets/88206626/8741e2e1-14f6-47e0-b8f9-c03eaee87bd1)
+## Descrição
 
-#### Main Page
-![image](https://github.com/igaaoo/Next-Template/assets/88206626/f9e733c8-e83a-4a39-8615-9751fab26fbd)
+Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pessoais de forma eficiente. O sistema inclui uma tela de login e funcionalidades de CRUD (Criar, Ler, Atualizar e Excluir) para tarefas.
 
-#### Data Table Example
-![image](https://github.com/igaaoo/Next-Template/assets/88206626/ccad7d7a-75d7-47f7-8685-946c174d0753)
+## Funcionalidades
 
-#### Dark Mode
-![image](https://github.com/igaaoo/Next-Template/assets/88206626/2871629d-d1db-4064-999c-f4466fa6980a)
+- **Tela de Login**: Permite que os usuários se autentiquem e acessem suas listas de tarefas.
+- **CRUD de Tarefas**: Permite a criação, visualização, atualização e exclusão de tarefas.
 
-### Main Settings
-#### Front End
-Set project name, description, navigation routes, links...
-![image](https://github.com/igaaoo/Next-Template/assets/88206626/89a92bab-45dc-46af-a93a-32e9a240c4a8)
-#### Backend 
-Set database connection setting and more
-![image](https://github.com/igaaoo/Next-Template/assets/88206626/f29d048e-dc90-4a3e-b789-9f833906ccfe)
+## Tecnologias Utilizadas
+
+- **[Next.js](https://nextjs.org/)**: Framework React para renderização no lado do servidor e criação de interfaces de usuário.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset de JavaScript que adiciona tipagem estática, melhorando a robustez do código.
+- **[Jest](https://jestjs.io/)**: Framework de testes para realizar testes unitários e garantir a qualidade do código.
+- **[Prisma](https://www.prisma.io/)**: ORM para gerenciar a base de dados e interagir com o banco de dados de forma eficiente.
+- **[SQLite](https://www.sqlite.org/)**: Banco de dados leve e fácil de configurar, utilizado para armazenar as tarefas.
+
+## Instalação
+
+Para rodar o projeto localmente, siga os seguintes passos:
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone [https://github.com/seu-usuario/to-do-list.git](https://github.com/igaaoo/to-do-wevy.git)
+   cd to-do-wevy
+
+2. **Instale Dependências:**
+
+   ```bash
+   yarn install ou npm install
+
+3. **Configure as variáveis de ambiente:**
+Criar arquivo .env na raiz do projeto contendo:
+ - DATABASE_URL="file:./database/todo.db" # Ou outro caminho para salvar o banco de dados SQLITE
+ - NODE_ENV=production # Ou com valor "test" para realizar os testes com JEST
+
+4. **Construa e Execute:**
+ ```bash
+   yarn build ou npm build
+
+```bash
+   yarn start ou npm start
+
+5. **Para testar o projeto:**
+Altere a variável de ambiente NODE_ENV para "test" e após, execute:
+
+ ```bash
+   yarn test ou npm test
+
+
+  
+
+
+
