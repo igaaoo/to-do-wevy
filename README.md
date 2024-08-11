@@ -52,11 +52,11 @@ yarn test # Ou npm run test
 ```
 
 ## Considerações
-Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login:
-**Usuário:**
-Wevy123
-**Senha:**
-Senha123
+Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login: <br/>
+**Usuário:** <br/>
+Wevy123 <br/>
+**Senha:** <br/>
+Senha123 <br/>
 
 
 ## Preview
