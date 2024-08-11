@@ -22,14 +22,12 @@ Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pes
 Para rodar o projeto localmente, siga os seguintes passos:
 
 1. **Clone o repositório:**
-
    ```bash
    git clone [https://github.com/seu-usuario/to-do-list.git](https://github.com/igaaoo/to-do-wevy.git)
    cd to-do-wevy
 <br/>
 
 2. **Instale Dependências:**
-
    ```bash
    yarn install ou npm install
 
