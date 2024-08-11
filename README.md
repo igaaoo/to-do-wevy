@@ -50,9 +50,3 @@ Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
  ```bash
    yarn test ou npm test
-
-
-  
-
-
-
