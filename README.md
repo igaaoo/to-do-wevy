@@ -17,7 +17,6 @@ Este projeto é um sistema de To Do List desenvolvido para gerenciar tarefas pes
 - **[Prisma](https://www.prisma.io/)**: ORM para gerenciar a base de dados e interagir com o banco de dados de forma eficiente.
 - **[SQLite](https://www.sqlite.org/)**: Banco de dados leve e fácil de configurar, utilizado para armazenar as tarefas.
 
- <br/>
 ## Instalação
 
 Para rodar o projeto localmente, siga os seguintes passos:
@@ -38,20 +37,19 @@ Criar arquivo .env na raiz do projeto contendo:<br/>
  - DATABASE_URL="file:./database/todo.db" # Ou outro caminho para salvar o banco de dados SQLITE<br/>
  - NODE_ENV=production # Ou com valor "test" para realizar os testes com JEST
 
- <br/>
 4. **Construa e Execute:**<br/>
     ```bash
     yarn build # Ou npm run build
     yarn start # Ou npm run start
     ```
- <br/>
+
 5. **Para testar o projeto:**<br/>
 Altere a variável de ambiente NODE_ENV para "test" e após, execute:
 
 ```bash
 yarn test # Ou npm run test
 ```
- <br/>
+
 ## Considerações
 Para motivos demonstrativos, já há um usuário cadastrado com algumas tarefas criadas, segue credenciais de login: <br/>
 **Usuário:** <br/>
@@ -59,7 +57,6 @@ Wevy123 <br/>
 **Senha:** <br/>
 Senha123 <br/>
 
- <br/>
 ## Preview
 **Tela de Login**
 ![image](https://github.com/user-attachments/assets/4e93d5f5-4eca-4b83-9f0a-4c8567fd2a4a)
